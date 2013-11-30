@@ -35,7 +35,7 @@ Please find configuration file named easybot.exe.conf in executable folder
 
 ### Known issues
 
-No all pairs are supported. Due to the usage of BitcoinCharts, pairs availables on BTC-e but not on this one won't be working. I've successfully tested BTC/EUR, BTC/USD and BTC/RUR.
+Not all pairs are supported. Due to the usage of BitcoinCharts, pairs availables on BTC-e but not on this one won't be working. I've successfully tested BTC/EUR, BTC/USD and BTC/RUR.
 
 ### Donations
 
