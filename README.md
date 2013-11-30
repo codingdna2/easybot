@@ -31,3 +31,13 @@ Find the latest release from [here](https://github.com/codingdna2/easybot/tree/m
 
 Please find configuration file named easybot.exe.conf in executable folder
 
+### Known issues
+
+No all pairs are supported. Due to the usage of BitcoinCharts, pairs availables on BTC-e but not on this one won't be working. I've successfully tested BTC/EUR, BTC/USD and BTC/RUR.
+
+### Donations
+
+Donations are always welcome and it really motivate developing!
+
+1GC8kcZp5ZVBm2bo96bUKEMkztU1rx5oy7
+
