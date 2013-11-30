@@ -13,10 +13,9 @@ While I was trying to understand some issues with this inspiring softwares, I fo
 
 ![easybot screenshot](https://raw.github.com/codingdna2/easybot/master/easybot/images/Screenshot01.png "Easybot")
 
-C# Source Code
-==============
+### Source Code
 
-Easybot was developed using C# and Visual Studio 2012. Project includes some external references:
+Easybot was developed using C# and Visual Studio 2012. Project uses some external references including:
 
 [migrap/BitcoinCharts](https://github.com/migrap/BitcoinCharts)
 
@@ -24,15 +23,11 @@ Easybot was developed using C# and Visual Studio 2012. Project includes some ext
 
 [TA-Lib](http://ta-lib.org/)
 
-Installation
-============
+### Installation
 
-Find the latest release from [here](https://github.com/codingdna2/easybot/tree/master/release)
+Find the latest release from [here](https://github.com/codingdna2/easybot/tree/master/release). Unzip the latest version wherever you prefer and run easybot.exe.
 
-Archive found on this folder requires no setup. Unzip the latest version wherever you prefer and run easybot.exe.
+### Setup
 
-Setup
-=====
-
-Please find configuration file named easybot.exe.conf and customize your BTC-e's API Key & Secret. 
+Please find configuration file named easybot.exe.conf in executable folder
 
