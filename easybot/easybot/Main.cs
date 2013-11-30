@@ -648,8 +648,8 @@ namespace easybot
                     // Analyze moving average starting from a certain point (where all MA have a value)
                     if (i >= min)
                     {
-                        //var diff = 100 * (result.SlowMA.Output[i - min] - result.FastMA.Output[i - min]) / ((result.SlowMA.Output[i - min] + result.FastMA.Output[i - min]) / 2);
-                        var diff = 100 * (result.LongMA.Output[i - min] - result.ShortMA.Output[i - min]) / ((result.LongMA.Output[i - min] + result.ShortMA.Output[i - min]) / 2);
+                        var diff = 100 * (result.ShortMA.Output[i - min] - result.LongMA.Output[i - min]) / ((result.ShortMA.Output[i - min] + result.LongMA.Output[i - min]) / 2);
+                        //var diff = 100 * (result.LongMA.Output[i - min] - result.ShortMA.Output[i - min]) / ((result.LongMA.Output[i - min] + result.ShortMA.Output[i - min]) / 2);
 
                         if (item >= 0.1m)
                         {
