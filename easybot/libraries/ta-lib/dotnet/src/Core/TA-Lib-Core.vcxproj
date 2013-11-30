@@ -1,0 +1,2440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug SubArray|Win32">
+      <Configuration>Debug SubArray</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release SubArray|Win32">
+      <Configuration>Release SubArray</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{667AF01A-5614-4446-9DCC-744D27906E5B}</ProjectGuid>
+    <RootNamespace>TALibCore</RootNamespace>
+    <Keyword>ManagedCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>Safe</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>Safe</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>Safe</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>Safe</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.60610.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <LinkKeyFile>$(ProjectDir)..\key.snk</LinkKeyFile>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <LinkKeyFile>$(ProjectDir)..\key.snk</LinkKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <LinkKeyFile>$(ProjectDir)..\key.snk</LinkKeyFile>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <LinkKeyFile>$(ProjectDir)..\key.snk</LinkKeyFile>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\c\src\ta_common; ..\..\..\dotnet\src\Core;..\..\..\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;CODE_ANALYSIS ;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\c\src\ta_common; ..\..\..\dotnet\src\Core;..\..\..\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\c\src\ta_common; ..\..\..\dotnet\src\Core;..\..\..\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;CODE_ANALYSIS;USE_SUBARRAY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\c\src\ta_common; ..\..\..\dotnet\src\Core;..\..\..\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;USE_SUBARRAY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>NotSet</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="Stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TA-Lib-Core.cpp" />
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_utility.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_ACOS.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_AD.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_ADD.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_ADOSC.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_ADX.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_ADXR.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_APO.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_AROON.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_AROONOSC.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_ASIN.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_ATAN.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_ATR.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_AVGPRICE.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_BBANDS.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_BETA.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_BOP.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CCI.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDL2CROWS.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDL3BLACKCROWS.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDL3INSIDE.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDL3LINESTRIKE.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDL3OUTSIDE.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDL3STARSINSOUTH.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDL3WHITESOLDIERS.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLABANDONEDBABY.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLADVANCEBLOCK.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLBELTHOLD.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLBREAKAWAY.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLCLOSINGMARUBOZU.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLCONCEALBABYSWALL.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLCOUNTERATTACK.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLDARKCLOUDCOVER.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLDOJI.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLDOJISTAR.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLDRAGONFLYDOJI.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLENGULFING.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLEVENINGDOJISTAR.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLEVENINGSTAR.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLGAPSIDESIDEWHITE.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLGRAVESTONEDOJI.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLHAMMER.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLHANGINGMAN.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLHARAMI.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLHARAMICROSS.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLHIGHWAVE.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLHIKKAKE.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLHIKKAKEMOD.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLHOMINGPIGEON.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLIDENTICAL3CROWS.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLINNECK.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLINVERTEDHAMMER.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLKICKING.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLKICKINGBYLENGTH.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLLADDERBOTTOM.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLLONGLEGGEDDOJI.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLLONGLINE.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLMARUBOZU.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLMATCHINGLOW.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLMATHOLD.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLMORNINGDOJISTAR.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLMORNINGSTAR.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLONNECK.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLPIERCING.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLRICKSHAWMAN.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLRISEFALL3METHODS.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLSEPARATINGLINES.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLSHOOTINGSTAR.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLSHORTLINE.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLSPINNINGTOP.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLSTALLEDPATTERN.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLSTICKSANDWICH.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLTAKURI.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLTASUKIGAP.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLTHRUSTING.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLTRISTAR.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLUNIQUE3RIVER.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLUPSIDEGAP2CROWS.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLXSIDEGAP3METHODS.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CEIL.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CMO.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CORREL.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_COS.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_COSH.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_DEMA.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_DIV.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_DX.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_EMA.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_EXP.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_FLOOR.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_HT_DCPERIOD.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_HT_DCPHASE.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_HT_PHASOR.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_HT_SINE.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_HT_TRENDLINE.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_HT_TRENDMODE.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_KAMA.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_LINEARREG.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_LINEARREG_ANGLE.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_LINEARREG_INTERCEPT.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_LINEARREG_SLOPE.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_LN.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_LOG10.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MA.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MACD.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MACDEXT.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MACDFIX.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MAMA.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MAVP.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MAX.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MAXINDEX.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MEDPRICE.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MFI.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MIDPOINT.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MIDPRICE.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MIN.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MININDEX.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MINMAX.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MINMAXINDEX.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MINUS_DI.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MINUS_DM.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MOM.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MULT.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_NATR.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_OBV.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_PLUS_DI.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_PLUS_DM.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_PPO.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_ROC.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_ROCP.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_ROCR.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_ROCR100.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_RSI.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_SAR.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_SAREXT.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_SIN.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_SINH.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_SMA.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_SQRT.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_STDDEV.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_STOCH.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_STOCHF.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_STOCHRSI.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_SUB.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_SUM.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_T3.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_TAN.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_TANH.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_TEMA.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_TRANGE.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_TRIMA.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_TRIX.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_TSF.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_TYPPRICE.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_ULTOSC.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_VAR.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_WCLPRICE.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_WILLR.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_WMA.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release SubArray|Win32'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Stdafx.h" />
+    <ClInclude Include="TA-Lib-Core.h" />
+    <ClInclude Include="..\..\..\c\src\ta_func\ta_utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

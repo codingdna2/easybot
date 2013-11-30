@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\ta_func">
+      <UniqueIdentifier>{dde2119a-1684-41b5-9bfc-f972c5bad6f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TA-Lib-Core.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_utility.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_ACOS.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_AD.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_ADD.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_ADOSC.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_ADX.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_ADXR.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_APO.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_AROON.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_AROONOSC.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_ASIN.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_ATAN.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_ATR.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_AVGPRICE.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_BBANDS.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_BETA.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_BOP.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CCI.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDL2CROWS.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDL3BLACKCROWS.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDL3INSIDE.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDL3LINESTRIKE.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDL3OUTSIDE.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDL3STARSINSOUTH.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDL3WHITESOLDIERS.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLABANDONEDBABY.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLADVANCEBLOCK.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLBELTHOLD.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLBREAKAWAY.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLCLOSINGMARUBOZU.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLCONCEALBABYSWALL.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLCOUNTERATTACK.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLDARKCLOUDCOVER.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLDOJI.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLDOJISTAR.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLDRAGONFLYDOJI.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLENGULFING.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLEVENINGDOJISTAR.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLEVENINGSTAR.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLGAPSIDESIDEWHITE.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLGRAVESTONEDOJI.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLHAMMER.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLHANGINGMAN.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLHARAMI.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLHARAMICROSS.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLHIGHWAVE.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLHIKKAKE.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLHIKKAKEMOD.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLHOMINGPIGEON.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLIDENTICAL3CROWS.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLINNECK.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLINVERTEDHAMMER.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLKICKING.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLKICKINGBYLENGTH.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLLADDERBOTTOM.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLLONGLEGGEDDOJI.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLLONGLINE.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLMARUBOZU.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLMATCHINGLOW.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLMATHOLD.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLMORNINGDOJISTAR.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLMORNINGSTAR.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLONNECK.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLPIERCING.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLRICKSHAWMAN.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLRISEFALL3METHODS.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLSEPARATINGLINES.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLSHOOTINGSTAR.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLSHORTLINE.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLSPINNINGTOP.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLSTALLEDPATTERN.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLSTICKSANDWICH.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLTAKURI.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLTASUKIGAP.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLTHRUSTING.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLTRISTAR.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLUNIQUE3RIVER.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLUPSIDEGAP2CROWS.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CDLXSIDEGAP3METHODS.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CEIL.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CMO.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_CORREL.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_COS.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_COSH.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_DEMA.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_DIV.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_DX.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_EMA.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_EXP.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_FLOOR.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_HT_DCPERIOD.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_HT_DCPHASE.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_HT_PHASOR.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_HT_SINE.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_HT_TRENDLINE.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_HT_TRENDMODE.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_KAMA.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_LINEARREG.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_LINEARREG_ANGLE.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_LINEARREG_INTERCEPT.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_LINEARREG_SLOPE.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_LN.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_LOG10.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MA.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MACD.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MACDEXT.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MACDFIX.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MAMA.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MAVP.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MAX.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MAXINDEX.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MEDPRICE.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MFI.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MIDPOINT.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MIDPRICE.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MIN.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MININDEX.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MINMAX.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MINMAXINDEX.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MINUS_DI.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MINUS_DM.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MOM.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_MULT.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_NATR.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_OBV.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_PLUS_DI.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_PLUS_DM.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_PPO.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_ROC.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_ROCP.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_ROCR.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_ROCR100.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_RSI.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_SAR.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_SAREXT.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_SIN.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_SINH.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_SMA.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_SQRT.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_STDDEV.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_STOCH.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_STOCHF.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_STOCHRSI.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_SUB.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_SUM.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_T3.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_TAN.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_TANH.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_TEMA.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_TRANGE.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_TRIMA.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_TRIX.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_TSF.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_TYPPRICE.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_ULTOSC.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_VAR.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_WCLPRICE.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_WILLR.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\c\src\ta_func\ta_WMA.c">
+      <Filter>Source Files\ta_func</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TA-Lib-Core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\c\src\ta_func\ta_utility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>
