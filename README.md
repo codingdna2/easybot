@@ -11,4 +11,4 @@ This software was mainly inspired by this two projects:
 
 While I was trying to understand some issues with this inspiring softwares, I found myself in need of some visual aid. While it's functional to understand some aspects of trading bots, the source code is quite messy as it was written in a few days.
 
-![easybot screenshot](easybot/easybot/images/Screenshot01.png "Easybot")
+![easybot screenshot](https://raw.github.com/codingdna2/easybot/master/easybot/images/Screenshot01.png "Easybot")
