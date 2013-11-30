@@ -27,7 +27,7 @@ Easybot was developed using C# and Visual Studio 2012. Project uses some externa
 
 ### Installation
 
-Find the latest release from [here](https://github.com/codingdna2/easybot/tree/master/release). Unzip the latest version wherever you prefer and run easybot.exe.
+Find the latest release from [here](https://github.com/codingdna2/easybot/blob/master/release/EasyBot_v1.0.zip?raw=true). Unzip the latest version wherever you prefer and run easybot.exe.
 
 ### Setup
 
@@ -42,4 +42,3 @@ No all pairs are supported. Due to the usage of BitcoinCharts, pairs availables 
 Donations are always welcome and really motivate developing :)
 
 1GC8kcZp5ZVBm2bo96bUKEMkztU1rx5oy7
-
