@@ -1,6 +1,8 @@
 Easybot
 =======
 
+### Introduction
+
 Easybot is a trading tool able to load, save and draw candles from various sources. At today it supports fetching trades from Bitcoincharts.com and Btce.com as well as loading previous calculated candles from CSV files.
 
 This software was mainly inspired by this two projects:
@@ -37,7 +39,7 @@ No all pairs are supported. Due to the usage of BitcoinCharts, pairs availables 
 
 ### Donations
 
-Donations are always welcome and it really motivate developing!
+Donations are always welcome and really motivate developing :)
 
 1GC8kcZp5ZVBm2bo96bUKEMkztU1rx5oy7
 
