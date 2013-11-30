@@ -1,4 +1,4 @@
-easybot
+Easybot
 =======
 
 Easybot is a trading tool able to load, save and draw candles from various sources. At today it supports fetching trades from Bitcoincharts.com and Btce.com as well as loading previous calculated candles from CSV files.
@@ -12,3 +12,27 @@ This software was mainly inspired by this two projects:
 While I was trying to understand some issues with this inspiring softwares, I found myself in need of some visual aid. While it's functional to understand some aspects of trading bots, the source code is quite messy as it was written in a few days.
 
 ![easybot screenshot](https://raw.github.com/codingdna2/easybot/master/easybot/images/Screenshot01.png "Easybot")
+
+C# Source Code
+==============
+
+Easybot was developed using C# and Visual Studio 2012. Project includes some external references:
+
+[migrap/BitcoinCharts](https://github.com/migrap/BitcoinCharts)
+
+[DmT021/BtceApi](https://github.com/DmT021/BtceApi)
+
+[TA-Lib](http://ta-lib.org/)
+
+Installation
+============
+
+Find the latest release from [here](https://github.com/codingdna2/easybot/tree/master/release)
+
+Archive found on this folder requires no setup. Unzip the latest version wherever you prefer and run easybot.exe.
+
+Setup
+=====
+
+Please find configuration file named easybot.exe.conf and customize your BTC-e's API Key & Secret. 
+
